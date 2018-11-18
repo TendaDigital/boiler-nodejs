@@ -1,0 +1,50 @@
+{
+  "name": "boiler-nodejs",
+  "version": "1.0.0",
+  "description": "Boilerplate Node.js",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test node ./test",
+    "start": "node server.js",
+    "start:watch": "forever --watch --watchFolder --watchIgnore ./ ./server.js --colors",
+    "coverage": "NODE_ENV=test nyc yarn test",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chalk": "^2.0.1",
+    "compression": "^1.7.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.15.3",
+    "express-history-api-fallback": "^2.2.1",
+    "express-unless": "^0.5.0",
+    "forever": "^0.15.3",
+    "i18n": "^0.8.3",
+    "ip": "^1.1.5",
+    "lodash": "^4.17.10",
+    "method-override": "^2.3.9",
+    "mongoose": "^5.2.5",
+    "morgan": "^1.8.2",
+    "qs": "^6.5.2",
+    "require-smart": "^1.1.1",
+    "swagger-jsdoc": "^3.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "sinon": "^6.1.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "reporter": [
+      "text",
+      "text-summary"
+    ],
+    "exclude": [
+      "app/**/*.spec.js",
+      "app/**/spec.js"
+    ]
+  }
+}

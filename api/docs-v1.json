@@ -1,0 +1,20 @@
+{
+  "openapi": "3",
+  "servers": [{
+    "url": "https://example.com",
+    "description": "Your Example"
+  }],
+  "info": {
+    "title": "Your Example",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Your concat",
+      "email": "your@email.com",
+      "url": "https://github.com/yourgith"
+    },
+    "x-logo": {
+      "url": "https://someimage.png",
+      "altText": "Your Site"
+    }
+  }
+}

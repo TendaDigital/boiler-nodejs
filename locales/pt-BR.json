@@ -1,0 +1,17 @@
+{
+  "hello": "Olá",
+  "errors": {
+    "BadRequest": "Requisição Inválida",
+    "InvalidParameter": "Paramêtro Inválido",
+    "Error": "Erro",
+    "NotFound": "Não Encontrado",
+    "Forbidden": "Não Permitido",
+    "MissingParameter": "Paramêtro faltando",
+    "FatalError": "Erro fatal",
+    "Conflict": "Conflito",
+    "MissingPermission": "Permissão faltando"
+  },
+  "route": {
+    "notFound": "Rota não encontrada"
+  }
+}
