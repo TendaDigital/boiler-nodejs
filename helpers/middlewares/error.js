@@ -12,6 +12,13 @@ module.exports = (err, req, res, next) => {
     return next()
   }
 
+  // Attemp to convert this as a MongoError
+  try {
+    app.helpers.parse.mongoError(err)
+  } catch(e) {
+    err = e
+  }
+
   // Gatter error metadata
   let body = app.helpers.parse.error(err, res)
 
